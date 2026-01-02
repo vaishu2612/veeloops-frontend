@@ -9,14 +9,16 @@ function LoginLayout() {
 
   return (
     <main className="login-veeloops">
-      {/* Left pink panel */}
-      <aside className="left-panel">
-        <img
-          src={yarnBall}
-          alt="Yarn illustration"
-          className="yarn-ball-image"
-        />
-      </aside>
+
+      {/* YARN IMAGE (visible on mobile & desktop) */}
+      <img
+        src={yarnBall}
+        alt="Yarn illustration"
+        className="yarn-ball-image"
+      />
+
+      {/* Left pink panel (DESKTOP ONLY) */}
+      <aside className="left-panel"></aside>
 
       {/* Login card */}
       <section className="login-card">
@@ -42,6 +44,7 @@ function LoginLayout() {
           </button>
         </form>
       </section>
+
     </main>
   );
 }
