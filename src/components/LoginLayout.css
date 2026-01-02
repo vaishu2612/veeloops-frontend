@@ -194,15 +194,13 @@
     overflow-x: hidden;
   }
 
-  .login-veeloops {
-    min-width: 0;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
-  }
+.login-veeloops {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
 
   .left-panel {
     display: none;
@@ -210,7 +208,7 @@
 
   .login-card {
     position: relative;
-    width: 90%;
+    width: 9%;
     height: auto;
     margin: 0 auto;
     padding: 24px 16px 32px;
@@ -220,9 +218,8 @@
   .subtitle,
   .title,
   .byline {
-    position: relative;
-    left: 0;
-    top: 0;
+    position: static;
+    margin:6px 0;
     text-align: center;
   }
 
@@ -237,7 +234,7 @@
   /* FORM STACK */
   .login-form {
     position: relative;
-    margin-top: 32px;
+    margin-top:24 px;
   }
 
   .input-username,
@@ -253,16 +250,12 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
   body {
     font-family: "Playwrite US Trad", cursive !important;
   }
-@media (max-width: 480px) {
-  body {
-    background-color: red !important;
-  }
-}
+
 
