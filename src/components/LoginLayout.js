@@ -4,6 +4,7 @@ import yarnBall from "../assets/yarn-ball-image.svg";
 function LoginLayout() {
   const handleSubmit = (e) => {
     e.preventDefault();
+    // backend hookup later
   };
 
   return (
@@ -24,7 +25,20 @@ function LoginLayout() {
         <h1 className="title">VeeLoops</h1>
         <p className="byline">-by vaish</p>
 
+        {/* LOGIN FORM */}
         <form className="login-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="input-username"
+            placeholder="username"
+          />
+
+          <input
+            type="password"
+            className="input-password"
+            placeholder="password"
+          />
+
           <button type="submit" className="login-button">
             Let me in 🧶
           </button>
