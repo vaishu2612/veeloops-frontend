@@ -159,6 +159,14 @@
     gap: 23px;
     padding: 22px 16px;
   }
+  .left-panel {
+  display: none;
+}
+.login-card {
+  left: 0 !important;
+  top: 0 !important;
+}
+
 
   /* YARN IMAGE (TOP) */
   .yarn-ball-image {
@@ -253,8 +261,3 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 480px) {
-  body {
-    background: red !important;
-  }
-}
