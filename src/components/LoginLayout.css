@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "Playwrite US Trad-Regular";
-  src: url("../fonts/PlaywriteUSTrad-Regular.ttf") format("truetype");
-  font-weight: bold;
-   font-style: italic;
-}
-@font-face {
-  font-family: "Port Lligat Sans-Regular";
-  src: url("../fonts/PortLligatSans-Regular.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
+
 /* PAGE */
 .login-veeloops {
   position: relative;
@@ -17,7 +6,8 @@
   min-width: 1440px;
   min-height: 1024px;
   background-color: #fff6ee;
-  font-family: "Playwrite US Trad-Regular", Helvetica, sans-serif;
+  font-family: "Playwrite US Trad", Helvetica, sans-serif;
+
 }
 
 /* LEFT PANEL */
@@ -60,7 +50,7 @@
   top:5px;
   left: 110px;
 
-  font-family: "Port Lligat Sans-Regular", Helvetica;
+  font-family: "Port Lligat Sans", Helvetica;
   font-size: 22px;
   color: #7a2532;
   opacity: 0.85;
@@ -107,7 +97,8 @@
   border-radius: 12px;
   border: 1px solid #5c3a21;
   outline: none;
-  font-family: "Playwrite US Trad-Regular", Helvetica;
+  font-family: "Playwrite US Trad", Helvetica, sans-serif;
+
 }
 
 /* PASSWORD */
@@ -126,7 +117,8 @@
   border-radius: 12px;
   border: 1px solid #5c3a21;
   outline: none;
-  font-family: "Playwrite US Trad-Regular", Helvetica;
+ font-family: "Playwrite US Trad", Helvetica, sans-serif;
+
 }
 
 /* BUTTON */
@@ -145,5 +137,58 @@
   font-size: 14px;
   color: #5c3a21;
   cursor: pointer;
-  font-family: "Playwrite US Trad-Regular", Helvetica;
+ font-family: "Playwrite US Trad", Helvetica, sans-serif;
+
+}
+@media (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .login-veeloops {
+    min-width: 0;        /* THIS IS CRITICAL */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .left-panel {
+    display: none;
+  }
+
+  .login-card {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    margin: 32px auto;
+    width: 90%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .input-username,
+  .input-password {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 90%;
+    margin: 12px auto;
+    display: block;
+  }
+
+  .login-button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-family: "Playwrite US Trad", cursive !important;
+  }
 }
