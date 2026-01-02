@@ -150,7 +150,7 @@
   .login-veeloops {
     min-width: 0 !important;
     width: 393px;
-    min-height: 852px;
+    min-height: 800px;
     overflow-x: hidden;
     background-color: #fff6ee;
 
@@ -173,7 +173,7 @@
     height: 231px;
     object-fit: cover;
     transform: translateX(0px);
-    margin-top: 8px;
+    margin-top: -2px;
   }
 
   /* CARD */
@@ -282,9 +282,7 @@
     transform: translate(0px,7px);
   }
 }
-body{
-  background-color: red !important;
-}
+
 /* HARD STOP HORIZONTAL SCROLL */
 html,
 body {
