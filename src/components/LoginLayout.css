@@ -148,93 +148,51 @@
   }
 
   .login-veeloops {
-    min-width: 0;        /* THIS IS CRITICAL */
+    min-width: 0;
     width: 100%;
     min-height: 100vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 12px;
   }
 
   .left-panel {
     display: none;
   }
 
+  /* 🔥 HARD RESET CARD */
   .login-card {
     position: relative;
-    top: 0;
-    left: 0;
-
-    margin: 32px auto;
-    width: 90%;
-    height: auto;
-    padding-bottom: 40px;
-  }
-
-  .input-username,
-  .input-password {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 90%;
-    margin: 12px auto;
-    display: block;
-  }
-
-  .login-button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  html,
-  body {
     width: 100%;
-    overflow-x: hidden;
-  }
-
-.login-veeloops {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 40px;
-}
-
-
-  .left-panel {
-    display: none;
-  }
-
-  .login-card {
-    position: relative;
-    width: 9%;
+    max-width: 380px;   /* IMPORTANT */
+    min-width: 0;
     height: auto;
     margin: 0 auto;
     padding: 24px 16px 32px;
+    box-sizing: border-box;
+    border-radius: 24px; /* keep aesthetic */
   }
 
-  /* TEXT STACK */
+  /* TEXT */
   .subtitle,
   .title,
   .byline {
     position: static;
-    margin:6px 0;
+    width: 100%;
     text-align: center;
+    margin: 6px 0;
   }
 
   .title {
-    margin-top: 8px;
+    font-size: 32px;
   }
 
-  .byline {
-    margin-top: 4px;
-  }
-
-  /* FORM STACK */
+  /* FORM */
   .login-form {
     position: relative;
-    margin-top:24 px;
+    width: 100%;
+    margin-top: 24px;
   }
 
   .input-username,
@@ -244,6 +202,7 @@
     left: 0;
     top: 0;
     margin-bottom: 16px;
+    box-sizing: border-box;
   }
 
   .login-button {
@@ -253,6 +212,7 @@
     margin-top: 16px;
   }
 }
+
 
   body {
     font-family: "Playwrite US Trad", cursive !important;
