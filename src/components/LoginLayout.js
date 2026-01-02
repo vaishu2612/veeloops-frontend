@@ -4,41 +4,27 @@ import yarnBall from "../assets/yarn-ball-image.svg";
 function LoginLayout() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // backend hookup later
   };
 
   return (
     <main className="login-veeloops">
 
-      {/* YARN IMAGE (visible on mobile & desktop) */}
-      <img
-        src={yarnBall}
-        alt="Yarn illustration"
-        className="yarn-ball-image"
-      />
+      {/* LEFT PANEL — DESKTOP */}
+      <aside className="left-panel">
+        <img
+          src={yarnBall}
+          alt="Yarn illustration"
+          className="yarn-ball-image"
+        />
+      </aside>
 
-      {/* Left pink panel (DESKTOP ONLY) */}
-      <aside className="left-panel"></aside>
-
-      {/* Login card */}
+      {/* LOGIN CARD */}
       <section className="login-card">
         <p className="subtitle">Enter your craft corner</p>
         <h1 className="title">VeeLoops</h1>
         <p className="byline">-by vaish</p>
 
         <form className="login-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            className="input-username"
-            placeholder="username"
-          />
-
-          <input
-            type="password"
-            className="input-password"
-            placeholder="password"
-          />
-
           <button type="submit" className="login-button">
             Let me in 🧶
           </button>
