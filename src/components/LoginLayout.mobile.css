@@ -1,97 +1,86 @@
-
-/* PAGE */
+@media (max-width: 480px) {
+  /* PAGE */
 .login-veeloops {
   position: relative;
-  width: 100%;
-  min-width: 1440px;
-  min-height: 720px;
+  width: 393px;
+  min-width: 393pxpx;
+  min-height: 850px;
   background-color: #fff6ee;
   font-family: "Playwrite US Trad", Helvetica, sans-serif;
 
 }
 
-/* LEFT PANEL */
-.left-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 656px;
-  height: 720px;
-  background-color: #f7b7cd;
-}
+  /* REMOVE DESKTOP PANEL */
+  .left-panel {
+    background: transparent;
+    width: auto;
+    height: auto;
+  }
 
-.yarn-ball-image {
-  position: absolute;
-  top: 150px;
-  left: 110px;
-  width: 435px;
-  height: 435px;
+ .yarn-ball-image {
+  position: relative;
+  top: 15px;
+  left: 75px;
+  width: 231px;
+  height: 231px;
   object-fit: cover;
-}
+ }
 
-/* LOGIN CARD */
+  /* LOGIN CARD */
 .login-card {
   position: absolute;
-  top: 100px;
-  left: 837px;
+  top: 250px;
+  left: 40px;
 
-  width: 420px;
-  height: 520px;
+  width: 299px;
+  height: 411px;
 
   background-color: #fff6ee;
   border-radius: 24px;
   border: 1px solid #5c3a21;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
-
 /* TEXT INSIDE CARD */
 .subtitle {
   position: absolute;
-  top:5px;
-  left: 110px;
+  top:-10px;
+  left:70px;
 
   font-family: "Port Lligat Sans", Helvetica;
-  font-size: 22px;
+  font-size: 20px;
   color: #7a2532;
   opacity: 0.85;
 }
 
 .title {
   position: absolute;
-  top: 25px;
-  left: 109px;
-  font-size: 40px;
+  top: 5px;
+  left: 70px;
+  font-size: 34px;
   color: #7a2532;
   font-weight: 400;
 }
 
 .byline {
   position: absolute;
-  top:110px;
-  left: 231px;
+  top:80px;
+  left: 185px;
 
-  font-size: 16px;
+  font-size: 12px;
   color: #5c3a21;
 }
-
-/* FORM */
-.login-form {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 /* USERNAME */
 .input-username {
   position: absolute;
-  left:50px;
-  top: 216px;
+  left:18px;
+  top: 160px;
 
-  width: 320px;
+  width: 240px;
   height: 44px;
 
   padding: 8px 12px;
-  font-size: 18px;
+  font-size: 16px;
 
   background-color: #fffafa;
   border-radius: 12px;
@@ -104,14 +93,14 @@
 /* PASSWORD */
 .input-password {
   position: absolute;
-  left: 50px;
-  top: 282px;
+  left: 18px;
+  top: 240px;
 
-  width: 320px;
+  width: 240px;
   height: 44px;
 
   padding: 8px 12px;
-  font-size: 18px;
+  font-size: 16px;
 
   background-color: #fffafa;
   border-radius: 12px;
@@ -120,30 +109,32 @@
  font-family: "Playwrite US Trad", Helvetica, sans-serif;
 
 }
-
 /* BUTTON */
 .login-button {
   position: absolute;
-  left: 120px;
-  top: 368px;
+  left: 95px;
+  top: 320px;
 
-  width: 180px;
-  height: 40px;
+  width: 120px;
+  height: 35px;
 
   background-color: #f7b7cd;
   border-radius: 30px;
   border: none;
 
-  font-size: 14px;
+  font-size: 12px;
   color: #5c3a21;
   cursor: pointer;
  font-family: "Playwrite US Trad", Helvetica, sans-serif;
 }
-/* HARD STOP VERTICAL SCROLL */
+}
+/* HARD STOP HORIZONTAL SCROLL */
 html,
 body {
-  max-height: 100%;
-  overflow-y: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-
+body {
+    background-color: red !important;
+}

@@ -1,4 +1,5 @@
-import "./LoginLayout.css";
+import "./LoginLayout.css";          // desktop
+import "./LoginLayout.mobile.css";   // mobile
 import yarnBall from "../assets/yarn-ball-image.svg";
 
 function LoginLayout() {
@@ -9,15 +10,19 @@ function LoginLayout() {
 
   return (
     <main className="login-veeloops">
+      {/* YARN — GLOBAL (desktop + mobile) */}
+  <img
+    src={yarnBall}
+    alt="Yarn illustration"
+    className="yarn-ball-image"
+  />
 
-      {/* LEFT PANEL — DESKTOP */}
-      <aside className="left-panel">
-        <img
-          src={yarnBall}
-          alt="Yarn illustration"
-          className="yarn-ball-image"
-        />
-      </aside>
+  {/* DESKTOP ONLY */}
+  <aside className="left-panel"></aside>
+
+  <section className="login-card">
+    ...
+  </section>
 
       {/* LOGIN CARD */}
       <section className="login-card">
