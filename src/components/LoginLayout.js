@@ -1,28 +1,19 @@
-import "./LoginLayout.css";          // desktop
-import "./LoginLayout.mobile.css";   // mobile
+import "./LoginLayout.css";
+import "./LoginLayout.mobile.css";
 import yarnBall from "../assets/yarn-ball-image.svg";
 
 function LoginLayout() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // backend hookup later
-  };
-
   return (
     <main className="login-veeloops">
-      {/* YARN — GLOBAL (desktop + mobile) */}
-  <img
-    src={yarnBall}
-    alt="Yarn illustration"
-    className="yarn-ball-image"
-  />
 
-  {/* DESKTOP ONLY */}
-  <aside className="left-panel"></aside>
-
-  <section className="login-card">
-    ...
-  </section>
+      {/* DESKTOP LEFT PANEL */}
+      <aside className="left-panel">
+        <img
+          src={yarnBall}
+          alt="Yarn illustration"
+          className="yarn-ball-image"
+        />
+      </aside>
 
       {/* LOGIN CARD */}
       <section className="login-card">
@@ -30,23 +21,10 @@ function LoginLayout() {
         <h1 className="title">VeeLoops</h1>
         <p className="byline">-by vaish</p>
 
-        {/* LOGIN FORM */}
-        <form className="login-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            className="input-username"
-            placeholder="username"
-          />
-
-          <input
-            type="password"
-            className="input-password"
-            placeholder="password"
-          />
-
-          <button type="submit" className="login-button">
-            Let me in 🧶
-          </button>
+        <form className="login-form">
+          <input className="input-username" placeholder="username" />
+          <input className="input-password" placeholder="password" />
+          <button className="login-button">Let me in 🧶</button>
         </form>
       </section>
 
@@ -55,3 +33,4 @@ function LoginLayout() {
 }
 
 export default LoginLayout;
+
