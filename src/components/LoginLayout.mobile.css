@@ -19,7 +19,7 @@
 
  .yarn-ball-image {
   position: relative;
-  top: 15px;
+  top: -30px;
   left: 75px;
   width: 231px;
   height: 231px;
@@ -29,7 +29,7 @@
   /* LOGIN CARD */
 .login-card {
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 40px;
 
   width: 299px;
@@ -45,7 +45,7 @@
 .subtitle {
   position: absolute;
   top:-10px;
-  left:70px;
+  left:68px;
 
   font-family: "Port Lligat Sans", Helvetica;
   font-size: 20px;
@@ -55,7 +55,7 @@
 
 .title {
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 70px;
   font-size: 34px;
   color: #7a2532;
@@ -64,7 +64,7 @@
 
 .byline {
   position: absolute;
-  top:80px;
+  top:87px;
   left: 185px;
 
   font-size: 12px;
@@ -112,7 +112,7 @@
 /* BUTTON */
 .login-button {
   position: absolute;
-  left: 95px;
+  left: 90px;
   top: 320px;
 
   width: 120px;
@@ -135,6 +135,3 @@ body {
   overflow-x: hidden;
 }
 
-body {
-    background-color: red !important;
-}
