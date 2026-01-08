@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+
+  /* PAGE */
+  .dashboard {
+    background-color: #fff6ee;
+    padding: 24px 16px 40px;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .dashboard-header {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  .dashboard-header h1 {
+    font-family: "Playwrite US Trad", Helvetica, sans-serif;
+    font-size: 34px;               /* from Anima */
+    font-weight: 400;
+    color: #7a2532;                /* exact */
+    margin: 0;
+  }
+
+  .dashboard-header p {
+    display: none; /* matches Figma mobile */
+  }
+
+  /* CARD STACK */
+  .dashboard-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;                     /* vertical rhythm */
+    align-items: center;
+  }
+
+  .cards-row {
+    display: contents;             /* flatten rows for mobile */
+  }
+
+  /* CARD */
+  .dashboard-card {
+    width: 335px;                  /* exact Anima width */
+    height: 60px;                  /* exact Anima height */
+
+    background-color: #fffafa;     /* exact */
+    border: 0.75px solid #f7b7cd;  /* exact */
+    border-radius: 24px;           /* exact */
+
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  /* CARD CONTENT */
+  .card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;          /* 👈 side by side */
+  justify-content: space-between;
+  align-items: center;
+}
+.card-number {
+  line-height: 1;
+}
+
+
+  /* LABEL */
+  .card-title {
+    font-family: "Port Lligat Sans", Helvetica, sans-serif;
+    font-size: 26px;               /* exact */
+    font-weight: 400;
+    color: #5c3a21;                /* exact */
+    margin: 0;
+  }
+
+  /* NUMBER */
+  .card-number {
+    font-family: "Playwrite US Trad", Helvetica, sans-serif;
+    font-size: 24px;               /* exact */
+    font-weight: 400;
+    color: #a45e70;                /* exact pink */
+    margin: 0;
+  }
+
+}

@@ -1,8 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import "./LoginLayout.css";
 import "./LoginLayout.mobile.css";
 import yarnBall from "../assets/yarn-ball-image.svg";
 
 function LoginLayout() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // TEMP LOGIN LOGIC (for now)
+    // Later we will connect backend here
+    navigate("/dashboard");
+  };
+
   return (
     <main className="login-veeloops">
 
@@ -21,10 +32,22 @@ function LoginLayout() {
         <h1 className="title">VeeLoops</h1>
         <p className="byline">-by vaish</p>
 
-        <form className="login-form">
-          <input className="input-username" placeholder="username" />
-          <input className="input-password" placeholder="password" />
-          <button className="login-button">Let me in 🧶</button>
+        {/* IMPORTANT: onSubmit added */}
+        <form className="login-form" onSubmit={handleSubmit}>
+          <input
+            className="input-username"
+            placeholder="username"
+          />
+          <input
+            className="input-password"
+            type="password"
+            placeholder="password"
+          />
+
+          {/* IMPORTANT: type="submit" */}
+          <button className="login-button" type="submit">
+            Let me in 🧶
+          </button>
         </form>
       </section>
 
@@ -33,4 +56,3 @@ function LoginLayout() {
 }
 
 export default LoginLayout;
-
